@@ -1,20 +1,31 @@
-﻿# Create README.md file for SpecFlow Experiment
+﻿SpecFlow Experiment
+===================
 
-A README.md file is intended to quickly orient readers to what your project can do. [Learn more](http://go.microsoft.com/fwlink/p/?LinkId=524306) about Markdown.
+Purpose
+-------
 
-## Get started with this page
- 1. Edit the contents of this page
- 2. Commit changes
 
-## Use Visual Studio
- 1. Connect with Team Explorer
- 2. Clone repository
- 3. Add a README.md file
- 4. Commit and push changes
+To experiment with the SpecFlow tool in Visual Studio 2013.  SpecFlow is the C# implementation of the Cucumber BDD system.
 
-## Use command line
-Use the following commands inside the folder of your repository:
+How to run the example
+----------------------
 
- 1. git add README.md
- 2. git commit -m "Adding project documentation" 
- 3. git push origin master
+1. Clone the git repo into a new solution in Visual Studio 2013
+2. Install the "SpecFlow for Visual Studio 2013" Visual Studio extension
+3. Open solution explorer
+4. Right click the "Specflow Tutorial" project and choose "Run SpecFlow Scenarios"
+5. A test should run and pass
+
+Code orgranisation
+------------------
+
+There are only two files of any interest:
+
+1. "Tutorial.feature" -- The specification file describing the test scenario to run
+2. "OrderingAnswersSteps.cs" -- The source code that both defines the bindings from the specification file to the code *and* defines the QuestionModel class which is the class under test.  Obviously in a real world example the class under test would be in a different file.
+
+
+
+
+
+Last updated: dave@goopot.co.uk, 13 April 2015
